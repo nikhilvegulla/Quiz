@@ -1,2 +1,2 @@
 # Quiz
-It is a sample quiz application
+It is a simple quiz application
