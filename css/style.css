@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgb(12, 162, 243);
+}
+
+.welcome_text
+{
+    width: 300px;
+}
+
+.welcome_form input,
+.welcome_form button{
+    display: block;
+    width: 100%;
+}
+
+.welcome_form input{
+    margin-bottom: 20px;
+    /* padding: 20px 15px; */
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    color: black;
+    text-align: center;
+}
+
+.welcome_form button{
+    font-size: 22px;
+    border: none;
+    border-radius: 27px;
+    /* color: rgb(130, 205, 245); */
+    padding: 15px 0;
+    transition: 0.4s all;
+}
+
+.welcome_form button:hover{
+    /* background-color: rgb(212, 129, 27); */
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.welcome_form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+    opacity: 0.4;
+}
+.quiz
+{
+    /* fo; */
+    border-radius: 3px;
+    width: 800px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 60px auto;
+    background-color: white;
+
+}
+
+.quiz_head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.quiz_body{
+    padding: 30px;
+    background-color: #ecf0f1;
+}
+
+.quiz_user{
+display: flex;
+align-items: center;
+padding-left: 20px;
+}
+
+.quiz_timer{
+    display: flex;
+    align-items: center;
+background-color:rgb(12, 162, 243);
+    padding: 0 20px;
+    font-weight: 1000px;
+    color: #fff;
+}
+
+.option_group{
+    list-style: none;
+    margin: 30px 0;
+}
+
+.option
+{
+    background-color: #fff;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+}
+
+.option:hover{
+    cursor: pointer;
+    border: 2px solid #0ca2f3;
+    /* color: #0ca2f3; */
+}
+
+.next{
+padding: 15px 35px;
+background-color: #0ca2f3;
+/* width: 180px;
+ */
+ color: #fff;
+ width:fit-content;
+ border: 2px solid transparent;
+ border-radius: 27px;
+ transition: 0.4s all;
+}
+
+.next:hover{
+    background-color: #fff;
+    color: #0ca2f3;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+.active
+{
+    background-color: #0ca2f3;
+    color: #fff;
+}
+
+.danger{
+    background-color: red;
+}

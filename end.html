@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            position: relative;
+        }
+        .quiz{
+            /* display: inline; */
+            /* display: flex; */
+            margin: 0;
+            font-size: 30px;
+
+            padding-top: 40px;
+            text-align: center;
+            /* justify-content: center; */
+            /* position: absolute; */
+            top: 50%;
+            /* transform: translateY(-50%); */
+            
+        }
+        #name,#score{
+            font-weight: 700;
+            font-size: 40px;
+        }
+        .score{
+            margin: 40px;
+        }
+
+        .image{
+            text-align: center;
+            margin-top: -20px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="quiz">
+
+            <!-- <div class="quiz_head"></div>
+            <div class="quiz_body"></div> -->
+
+            <div>
+                <p>Thank You for Participating ! </p>
+                <span id="name"></span></div>
+
+            <div class="score">
+                <p>Your Score : <span id="score"></span></p>
+            </div>
+            <!-- <div class="image">
+                <img src="image1.jpg" alt="">
+            </div> -->
+        </div>
+    </div>
+
+
+    <script>
+
+        window.onload=function()
+        {
+            document.getElementById("name").innerHTML=sessionStorage.getItem("name");
+            document.getElementById("score").innerHTML=sessionStorage.getItem("score");
+        }
+    </script>
+</body>
+</html>
